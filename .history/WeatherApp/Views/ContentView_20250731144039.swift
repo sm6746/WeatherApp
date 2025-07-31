@@ -4,14 +4,6 @@ struct HomeView: View {
     @StateObject var locationManager = LocationManager()
     var weatherManager = WeatherManager()
     @State var weather: ResponseBody?
-
-    var tip: String {
-    if temp > 35 { return "Stay hydrated 💧" }
-    else if condition == "Rain" { return "Carry an umbrella ☔" }
-    else { return "Have a great day 🌤" }
-    
-    }
-
     
     var body: some View {
         VStack{
@@ -40,9 +32,8 @@ struct HomeView: View {
                     }
                 }
             }
-        .background(LinearGradient(colors: [.blue, .purple], startPoint: .top, endPoint: .bottom))
-        .font(.custom("Avenir", size: 20))
-
+        .background(Color(hue: 0.679, saturation: 0.956, brightness: 0.441))
+        .preferredColorScheme(.dark)
     }
 }
 

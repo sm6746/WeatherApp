@@ -1,6 +1,5 @@
-import SwiftUI
 @main
-struct ClimTrackApp: App {
+struct WeatherAppApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
